@@ -3,6 +3,8 @@
     padding: 0px;
   }
   
+/* styling section-main */  
+
   .section-main {
       background-image: url(assets/main-bg.jpg);
       background-size: cover;
@@ -18,3 +20,45 @@
   #navbarLogo {
       font-size: 24px;
   }
+
+  .main-content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-content h1 {
+    margin-top: 200px;
+    font-size: 72px;
+    font-weight:700;
+    letter-spacing: 3px;
+    line-height: 83px;
+    font-style: normal;
+}
+
+.main-content h3 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 28px;
+    font-style: normal;
+}
+
+.main-content a {
+    background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+    font-family: "Open Sans", sans-serif;
+    margin-top: 40px;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 60px ;
+}
+
+.main-content h5 {
+    font-family: "Open Sans", sans-serif;
+    margin-top: 320px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* styling section-main */  
