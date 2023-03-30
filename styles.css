@@ -33,6 +33,39 @@
       text-transform: uppercase;
       font-size: 1rem;
     }
+
+    .navbar .navbar-nav .nav-link {
+      transition: all 0.2s;
+    }
+
+    .navbar .navbar-nav .nav-link {
+      position: relative;
+    }
+
+    .navbar .navbar-nav .nav-link::after {
+      content: '';
+      opacity: 0;
+      transition: all 0.2s;
+      height: 2px;
+      width: 100%;
+      background-color: #FFB548;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .navbar .navbar-nav .nav-link:hover::after {
+      opacity: 1;
+    }
+
+    /* .navbar .navbar-nav .nav-link:hover {
+      background-color: #FFB548;
+      padding: 0.9rem;
+    }
+
+    .navbar .navbar-nav .nav-link{
+      transition: all 0.5s;
+    } */
   
     #navbarLogo {
       font-size: 1.5rem;
@@ -319,4 +352,252 @@
       letter-spacing: 0.1rem;
     }
 
-/* section section-requirements end */
+/* styling section-requirements end */
+
+/* styling section-top-score-quotes start */
+
+.section-top-score-quotes {
+  height: 120vh;
+  background-image: linear-gradient(black 0%, transparent 50%, black 100%), url(assets/top-score-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+  .section-top-score-quotes .top-score {
+    margin-left: 5rem;
+    position: relative;
+    top: 50vh;
+  }
+
+  .section-top-score-quotes .top-score h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+  }
+
+  .section-top-score-quotes .top-score p {
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    margin-top: 1.25rem;
+    width: 40%;
+  }
+
+  .section-top-score-quotes .top-score #see-more {
+    font-family: "Open Sans", sans-serif;
+    background-color: #FFB548;
+    color: #1A1917;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 1.5rem;
+    width: 250px;
+    padding: 1rem;
+  }
+
+  .section-top-score-quotes .card-data {
+    position: relative;
+    top: 100px;
+    right: 100px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    height: 100vh;
+  }
+  
+  .section-top-score-quotes .card-col {
+    position: absolute;
+    right: -115px;
+    width: 800px;
+  }
+
+  .section-top-score-quotes .body-card {
+    background-color: rgba(255, 255, 255, 0.295);
+  }
+  
+    .section-top-score-quotes .body-card .picture {
+      float: left;
+      border-radius: 50%;
+      width: 50px;
+      box-shadow: 7px 1px#FFB548;
+    }
+    
+    .section-top-score-quotes .body-card .twitter {
+      position: absolute;
+      right: 15px;
+      top: 20px;
+    }
+    
+    .section-top-score-quotes .card-middle {
+      position: relative;
+      margin-left: -200px;
+      width: 100%;
+      height: 180px;
+    }
+    
+    .section-top-score-quotes .name {
+      margin: 0px;
+      position: relative;
+      left: 20px;
+    }
+    
+    .section-top-score-quotes .name .people {
+      color: #FFB548;
+      margin-bottom: -10px;
+      font-size: 24px;
+    }
+    
+    .section-top-score-quotes .name .jobdesk {
+      position: relative;
+      color: #FFFFFF;
+      font-size: 18px;
+      opacity: 0.5;
+    }
+
+    .section-top-score-quotes .card-text {
+      color: white;
+      font-weight: normal;
+      font-size: 16px;
+    }
+    
+    .section-top-score-quotes .card-footer {
+      margin-top: -15px;
+      font-size: 16px;
+    }
+
+/* styling section-top-score-quotes end */
+
+
+
+/* styling section-newsletter start */
+.section-newsletter-footer #footer {
+  min-height: 100vh;
+}
+
+.section-newsletter-footer .footer-news-bg {
+  background-image: linear-gradient(black 0%, transparent 50%, black 100%), url(assets/top-score-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #080a0b;
+}
+
+.section-newsletter-footer .text-news {
+  color: #FFFFFF;
+}
+
+.section-newsletter-footer .text-news h5 {
+  font-size: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-newsletter-footer .text-news h2 {
+  font-size: 4rem;
+}
+
+.section-newsletter-footer .text-news p {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.section-newsletter-footer .form-news {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.section-newsletter-footer .form-news div {
+  position: relative;
+  height: 3rem;
+}
+
+.section-newsletter-footer .form-news input {
+  padding: 2rem 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: unset;
+}
+
+.section-newsletter-footer .form-news input:focus {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: unset;
+}
+
+.section-newsletter-footer .form-news input::placeholder {
+  color: #FFB548;
+}
+
+.section-newsletter-footer .footer-img-skull img {
+  width: 100%;
+}
+
+.section-newsletter-footer .inputLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 1.5rem;
+  padding-top: 0.25rem;
+  font-size: x-small;
+}
+
+.section-newsletter-footer .footer-nav {
+  grid-template-columns: 9fr 3fr;
+}
+
+.section-newsletter-footer .footer-nav-left ul {
+  font-weight: bold;
+  list-style-type: none;
+  justify-content: space-evenly;
+  padding: 0;
+}
+
+.section-newsletter-footer .footer-nav-left a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.section-newsletter-footer .footer-nav-right {
+  text-align: right;
+  justify-content: space-evenly;
+}
+
+.section-newsletter-footer .copyright {
+  color: #FFFFFF;
+  border-top: 2px solid ;
+  padding: 1rem 0;
+}
+
+.section-newsletter-footer .copyright p {
+  text-align: left;
+  margin: 0;
+}
+
+.section-newsletter-footer .bottom-footer {
+  font-weight: bold;
+  text-align: right;
+}
+
+.section-newsletter-footer .bottom-footer a {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.section-newsletter-footer .bottom-footer span {
+  color: #FFFFFF;
+}
+
+/* styling section-newsletter end */
+
